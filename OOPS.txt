@@ -1,0 +1,654 @@
+Q-1> WHAT IS MULTI-THREADING ?
+
+ANS:-It is a system that creates many threads  to increase the overall power and working capacity of a computer. In the process of          multi-threading,we use a CPU for executing many threads  at any given time.
+       
+       * The process in multi-threading share same resources and memory.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-2> WHAT IS MULTI-TASKING?
+
+ANS:-It is the process in which a CPU execute multiple tasks at any given time.CPU switching occur when multi-tasking                                  happen between various tasks. 
+        
+        * The process in multi-tasking share separate resources and memory.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-3> WHAT IS DIFFERENCE BETWEEN MULTI-TASKING AND MULTI-THREADING?
+
+ANS:- MULTI-TASKING:-
+                            
+                                * The process of multitasking let the CPU execute various tasks at the very same time.
+                                * A user can easily  perform various task simultaneously using multi-tasking.
+                                * The system needs to allocate separate resources and memory for working simultaneously
+                                   in multi-tasking.
+                                * There is the constant switching between various programs by the CPU.
+                                * Executing multi-tasking is comparatively slower.
+                                * The termination of a process takes comparatively more time in multi-tasking.
+
+
+       MULTI-THREADING:-
+       
+                                * The process of multi-threadding lets a CPU generate multiple threads and process all of them simultaneously.     
+                                * A CPU divide a single program into various threads so that it can work more efficiently and conveniently. Thus
+                                     multi-threading increases computer power.
+                                * The system allocate a single memory to any given process in multi-threading.The threads generated out of it 
+                                     have very same resource and memory that the CPU allocated to them.
+                                * There is the constant switching between various thread by the CPU..
+                                * Executing multi-threading is comparatively much faster.
+                                * The termination of a process takes comparatively less time in multi-threading.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-4> WHAT IS OOPS?
+
+ANS:- OOPS  is a way of programming. In oops we can represent real-world objects like car,animal,atm in our code.
+         Every objects contains two things:-
+        1.data
+        2.functionality
+        Oops allows us to combine the data and the functionality and wrap it inside an object.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-5> WHAT IS OBJECTS?
+
+ANS:-In simple word, an object is something that posses some data,characteristic and can perform certain functions
+       for ex:-
+             Car is an object and can perform functions like start,stop,drive and brake.
+             and its color,its mileges,max speed,models these are data or attributes of car.
+     ->  Object is create in heap area.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-6> WHAT IS CLASSES?
+
+ANS:-To create or represent objects , we have to write first all their data or attribute and behaviours under a single group.
+         This group is called a class.
+         We cannot directly create an object first we have to create class.
+         Thus a class is an architecture of object. It is a proper description of the attribute and method of the object.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-7> HOW MANY TYPES OF CLASS LEVEL VARIABLE ?
+
+ANS:- There are 3 kinds of variables which can be declared inside the body of a class.
+         1.Instance variable
+         2.Local variable
+         3.Class variable
+  
+  *    INSTANCE VARIABLE:- Instance variables are created per instance basis. It is created inside instance object.It is destroyed when
+                                      object is destroyed.
+
+
+  * LOCAL VARIABLE:-   It is created locally inside the method body. It is destroyed when the execution of code of that method is over.
+  
+  * CLASS VARIABLE:-  It is created inside the class and shared by every object of that class. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-8> WHAT IS ENCAPSULATION?
+
+ANS:- You should keep your data in such a way that only method of that class can access your data.That data cannot be accessed from          outside the class .
+    ->  Encapsulastion means that the internal representation of an object is generally hidden from outside the class body.
+     ->In simple word we can say that, The process of wrapping data member and member function is known as ENCAPSULATION.
+    
+     To acheive encapsulation we have to prefix the data member name with double underscore.
+     In java and c++ private keyword in used.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-9> HOW CAN WE ACCESS PRIVATE MEMBER VARIABLE?
+                                      OR
+Q-9> WHAT RESULT ENCAPSULATION GIVES IN PROGRAM?
+
+ANS:- Now to access such private member. we must define instance method in the class. from outside the class we must call these        method using object reference instead of directly accessing data member using object reference.
+       NOTE:- when we try to access private data from outside the class then an ATTRIBUTE ERROR occurs.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-10>  WHAT IS ABSTRACTION?
+
+ANS:-The process of hiding the real implementation of an application from the user and emphasizing only on usage of it.
+               OR
+        Abstraction is the concept of object-oriented programming is that showing only essential attributes and hiding unneccesary        information.
+      for example:-
+                   The internal coding of factorial function is generally hidden from the user, either it may be recursive or loop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-11> WHAT IS CONSTRUCTOR?
+
+ANS:- Constructor is used to create instance variable. In c++,java the name of constructor must be same as a name of class but
+         in python the constructor name is not same as class name rather it is called __init__.
+        * The task of the constructor is to initialize to the data member of the class.
+        * As the object is created __init__ automatically called.
+        * Every time when an object is created __init__ called.
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-12> WHAT IS DIFFERENCE BETWEEN OVERWRITING AND OVERRIDDING ?
+
+ANS:- When we define more than one method of same name in a single class,then the latest method or the method deifne last will 
+         "overwrite" the above method of same name.
+
+         When the method of same name are present in both the parent class and child class then the method of child class "override"
+        the method of parent class.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-13> WHAT IS DESTRUCTOR?
+
+ANS:- just like a constructor is used to initialize member of an object a destructor is used to destroy the member of an object and          perform the final clean up.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-14> WHAT IS INHERITANCE?
+
+ANS:- The mechanism of derieving a new class from old one or existing class such that thenew class inherit al the members of old class
+          (existing class) means all the methods and variables of existing class will available in new class.This is called inheritance.
+
+         * parent class  ==  base class  ==  super class.
+
+         * child class  ==  derieved class == sub class
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-15> HOW MANY TYPES OF INHERITANCE?
+
+ANS:- 1. Single Inheritance
+         2. multilevel Inhertance
+         3.Hybrid Inheritance
+         4.Hierarchial Inheritance
+         5.Multiple Inheritance
+
+     NOTE:- java doesn't support multiple inheritance.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q-16> DEFINE SINGLE INHERITANCE?
+
+ANS:- If a class is derieved from one base class(parent class) is called single inheritance.
+          syntax:-
+                 class A:
+                      def method1:
+                             code..
+                     def method2:
+                             code..
+
+                 class B(A):
+                      def method3:
+                            code..
+
+   Thus class B is derieved from one base class A. so, class B now have three methods i.e. method1,method2,method3.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-17> WHAT IS MULTILEVEL INHERITANCE?
+
+ANS:-In multilevel inheritance, the class inherit the feature of another derived class.This process is known as multilevel inheritance.
+         we can inherit a derieved class.
+         note:- in python multilevel inheritance can be done at any depth.
+
+         syntax:- class A:
+                           def method1:
+                                   code..
+                     class B(A):
+                            def method2:
+                                    code..
+                      class C(B):
+                             def method3:
+                                    code..
+
+ here class c have all three methods i.e:-method1,method2,method3.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-18> WHAT IS HIERARCHIAL INHERITANCE?
+
+ANS:- In hierarchial inheritance one class is inherited by many subclass.
+         
+       syntax:- class A:
+                         def method1:
+                              code..
+                    class B(A):
+                          def method2:
+                              code..
+                    class C(A):
+                          def method3:
+                              code..
+
+here class  B have method2 as well as method1 and class C have method3 as well as method1.
+ method1 is inherited by both class B and C.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-19> WHAT IS MULTIPLE INHERITANCE?
+
+ANS:-Java doesnot support multiple inheritance,whereas c++,pyhon support multple inheritance.
+         when a class is derieved from more than one class.
+                                   or
+         when a class inherit more than one class.
+   note:- in multiple inheritance, the feature of all the base class are inherited into the derieved class.
+
+ syntax:- class A:
+                  def method1:
+                        code..
+              class B:
+                   def method2:
+                        code..
+               class C(A,B):
+                    def method3:
+                         code..
+Here class c inherit the all the methods from class A and B.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-20> WHAT IS HYBRID INHERITANCE?
+
+ANS:- This form of inheritance combine more than one form of inheritance,basically it is a blend of more than one type of inheritance.
+
+        syntax:- class A:
+                          ---
+                          ---
+                    class B(A):     ------> 
+                          ---
+                          ---
+                    class C(A):
+                          ---
+                          ---
+                    class D(B,C):    -----> (multiple+multilevel)==HYBRID INHERITANCE
+                          ---
+                          ---
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-21> WHAT IS AN EXCEPTION?
+
+ANS:-Exceptions are error that occurs at runtime.In other words, if our program encounter an abnormal situation during its execution,
+        it raises an exception.
+        For ex:- the statement 10/0 will generate an exception because python has no way to solve division by zero.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q-22> WHAT IS EXCEPTION HANDLING?
+
+ANS:- If  we want our program to behave normally, even if an exception occurs, then we will have to apply EXCEPTION HANDLING.
+                                                        OR
+    Exception handling is a mechanism which allows us to handle errors gracefully while the program is running instead of abruptly 
+       ending the program execution. 
+   ->  keywords which are used in exception handling:-
+     1. try
+     2. except
+     3. else
+     4. raise
+     5.finally
+  Note:- In JAVA,C++ except is replaced by cache.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------- 
+Q-23> WHICH TYPES OF LINE WE WRITE IN TRY BLOCK?
+
+ANS:- The line which may produce an error and the line which is related to that line which may generate an error are written in try block.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-24> WHAT HAPPENS WHEN AN EXCEPTION OCCUR IN TRY BLOCK?
+                                   OR
+Q-24> WHAT IS THE FLOW OF EXCEPTION HANDLING?
+
+ANS:-  1. When an exception occurs in try block the execution of try block terminate and control goes in except block.
+          2. An object is created related to the exception.
+          3. The python matches the parameter which is an exception class name,after successfull matching that except block will execute.
+          4. then the line which is outside the try block will execute.
+        
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-25> WHAT IS FINALLY BLOCK ?
+
+ ANS:-If we want to run some lines of code every time even an exception is not handle then we should write these codes in finally block.
+          such as :- code to dissconnect database, code to close open file, must written in finally block.
+        -> Finally will not execute if an exception occurs from outside the try block.
+        -> Without try we cannot use finally.
+  syntax:-
+             try:
+               ----
+               ----
+             except:
+                ----
+                ----
+            finally:
+                ----
+                ----
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-26> HOW AND WHY WE RAISE AN EXCEPTION?
+
+ANS:- We can force python to generate an exception using the keyword raise.
+         This is normally done in those condition where we want python to throw an exception in a particular condition of our choice.
+
+      syntax:-
+                  * raise ExceptionClassName
+                  * raise ExceptionClassName("message")
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-27> WHO HANDLE THE EXCEPTION BY DEFAULT WHEN YOU DONOT APPLY EXCEPTION HANDLING?
+
+ANS:-Python's default handler, it handles the exception in its own way
+        1. Its terminates the whole code after an exception found
+        2. Show very technical style error msg means user friendly error msg.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-28> WHAT IS MRO RULE?
+
+ANS:-The order in which the method of base class are being searched is often called the "method resolution order" OR "mro".
+         In multiple inheritance scenaria, any specific method is searched first in the current class, if not found, the search continues into 
+        parent class in left to right fashion and then in depth without searching the same class twice.
+
+    ex:- class C(A,B)
+               First search in C then A and then B.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-29> WHAT IS SUPER()?
+
+ANS:- In python, to call parent class method from child class's mehtod we use the method super().
+     -> We can also use self. instead of super(). but super() is compulsory in 2 situations.
+         1. For calling parent class constructor.
+         2. For calling overridden method.
+ note. In java super in keyword but in python super in function.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-30> WHAT IS BENEFITS OF INHERITANCE?
+
+ANS:- It represents real-world relationship well.
+        * It provides reusability of a code. We donot have to write the same code again and again.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-31>WHAT IS POLYMORPHISM?
+
+ANS:- Polymorphism is composed of two words- "poly" which means "many" and "morph" which means "shapes". Therefore
+         Polymorphism refers to something that has many shapes.
+        In OOPS, polymorphism refers to the process by which some code,method,objcets behaves differently under different 
+        circumstances.
+        There are two types of polymorphism in OOPS :-
+        1.Compile time polymorphism
+        2.Runtime polymorphism 
+
+    For ex:-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-32> WHAT IS COMPILE TIME POLYMORPHISM?
+
+ANS:- Compile time polymorphism, also known as static polymorphism,refers to the type of polymorphism which is  resolved  at 
+         compile time. What it means is that the compiler decides what value has to be taken. An example of compile-time polymorphism
+        is method overloading.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-33> WHAT IS RUNTIME POLYMORPHISM?
+
+ANS:- Runtime polymorphism,also known as Dynamic polymorphism,refers to the type of polymorphism that happens at the run time
+         What it means is it can't be decided by the compiler. Therefore what value has to be taken depends upon the execution.
+         Hence the name Runtime polymorphism.An example of runtime polumorphism is method overriding.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-34> HOW MUCH MEMORY DOES A CLASS OCCUPY?
+
+ANS:- Classes do not consume any memory.They are just a blueprint  based on which objects are created. Now when objects are
+        created, they actually initialize the class members and methods and therefore consume memory.
+        So class doesnot consume any memory. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-35> DESCRIBE THE TYPES OF CONSTRUCTOR?
+
+ANS:-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-36> WHAT IS ABSTRACT CLASS? CAN YOU CREATE AN INSTANCE OF AN ABSTRACT CLASS?
+
+ANS:- An abstract class is a class that consists of abstract methods.These methods are basically declared but not defined. If these 
+         methods are to be used in some subclass, they need to be exclusively defined in the subclass.
+         * No we cannot create an instance of an abstract class.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-37> WHAT IS METHOD OVERLOADING?
+
+ANS:-Method overloading is a feature of OOPS which makes it possible to give the same name to more than one methods within a class
+       if the argument passed differ. which means method signature must be different.
+      NOTE:- 
+            * overloading resolves during compile-time.
+            * overriding resolves during runtime.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-38> WHAT ARE ACCESS SPECIFIERS?
+
+ANS:- Access specifiers or access modifiers are keywords that determine the accessibility of methods, classes,etc in OOPS. These
+        access specifiers allow the implementation of encapsulation.The most common access specifiers are public,private and protected.
+       
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-39>WHAT IS AN INTERFACE?
+
+ANS:-It is a concept of oops that allows you to declare methods without defining them.They donot contain detailed instructions or         actions  to be performed.  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Q-40> WHAT ARE VIRTUAL FUNCTIONS?
+
+ANS:- Virtual functions are functions that are present in the parent class and are overridden by the subclass.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-41> WHAT IS POP?
+
+ANS:- The program which we design around function i.e block of statetement which manipulate data.
+         procedure:- function
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-42> WHAT ARE ADVANTAGE OF POP?
+
+ANS:- 1. It is easy to implement
+         2. The ability to re-use the same code at differrente place in the program without copying it.
+         3. Need less memory i.e when a function is called its variable created, the moment execution of the code is over
+             its variables are automatically destroyed or memory of these variables are released.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-43> WHAT ARE DISADVANTAGES OF POP?
+
+ANS:- pop observers everything as function while the real world is not the world of function.Real world is the world of object. so
+         it is very difficult to relate with real world object.
+       * Data is exposed to whole program so no security for data that is the big disadvantage of pop bcz data is everything.
+       * difficult to create new data types
+       * Importance is given to the operation on data rather than data means function is the center of pop not data.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-44> WHAT ARE ADVANTAGES OF OOPS?
+
+ANS:-Program are based on the concept of OOPS.
+       * Reduce software development time
+       * provide data security
+       * complexity of the program can be reduced through inheritance.
+       * data abstraction seperate object specification and object implementation.
+       * program written in oops language are easy to understand.
+       * Reusability of existing code. 
+       * it provide data hiding so it provides more security.
+       * In oops we can easily related real word object.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-45> WHAT ARE DISADVANTAGES OF OOPS?
+
+ANS:- 1. 	Desingning a program in oop concept is a little bit tricky.
+         2. Programmer should be well skilled.
+         3. proper planning required to developed software.
+         4. The size of programs developed with oops is larger than the  procedural approach.
+         5. oop has more lines of code than procedural programs.
+         6. oop are slower than procedural program.
+     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-46> WHAT IS SELF IN PYTHON?
+
+ANS:- Self is nothing, it is a normal argument.
+       *  Self is the first argument of __init__. It recieves address of current object.
+       * while calling the method python also passes the address of the object for which it
+          is calling as the first argument.
+       * it is just a argument we can replace with any variable.
+       * self is a positional argument, It is a reference that refers to current object.
+ 
+      NOTE:-  self is not a keyword.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Q-47> WHEN ATTRIBUTE ERROR COMES  AND NAME ERROR?
+
+ANS:- When we try to access that instance member which is not present in instance object then attribute error comes.
+        AND when we try to access normal variable which is not present in code or not present inside the scope then name error comes.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-48> WHAT IS __DICT__ IN PTYHON?
+
+ANS:- Every object in python has an attribute denoted by __dict__.
+       * This attribute is automatically added by python and it contains all the attributes defined inside the object.
+       * it maps the attribute name to its values.
+       * __dict__ is an instance variable which is added by python itself.
+       * it a a dictionary.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-49>WHAT DO YOU MEAN BY ACCESSING AND MODYFYING?
+
+ANS:- ACCESSING:- It means we are just reading the value of variable,or use the variable.
+
+        MODIFYING:- It means we are changing its value.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-50> WHAT IS THE DIFFERENCE BETWEEN SELF AND CLS IN PYTHON?
+
+ANS:- 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Q-51> WHAT IS @CLASS METHOD AND @STATIC METHOD?
+
+ANS:- These are decorator in python in java these are annotation.
+    --> Decorators are the special word which comes with @ symbol. Decorators convey special meaning to python compiler about
+         the method.
+   --> @class method tell the python compiler that they are not to be considered as instance method they are considered to be class 
+        method.
+   --> To create a class method we write the special word @ class method i.e decorator on the top of method definition.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+           
+
+
+                                                         
+           

@@ -1,0 +1,479 @@
+Q.1> WHAT DO YOU MEAN BY A POINTER VARIABLE?
+
+ANS:- Pointer varibale is a varibale which is declared to store the address of actual variable.
+      while declaring pointer variable we have to use * like:- int *p , where p is the pointer varibale.
+
+-----------------------------------------------------------------------------------------------------------------
+Q-2> WHAT DO YOU MEAN BY SCOPE OF THE VARIABLE?
+
+ANS:- Scope of variable can be defined as the part of the code area where the variables declared in the
+      program can be accessed directly.
+
+---------------------------------------------------------------------------------------------------------------
+Q-3> WHAT IS C PROGRAMMING LANGUAGE AND WHY WE USE IT?
+
+ANS:- C is a System level programming language.
+      it is used to develop System software and application software.
+      it is developed by dennis ritchie in 1970's at AT&T Bell labs.
+
+---------------------------------------------------------------------------------------------------------------
+Q-4> WHY WE USE MAIN() FUNCTION IN EVERY C PROGRAM?
+
+ANS:- Main() is pre-declared and user defined function.
+      it is compulsory to use this function in every C program because execution of the program begins 
+      with main().
+
+---------------------------------------------------------------------------------------------------------------
+Q-5> WHAT IS THE MEANING OF HEADER FILE? NAME SOME HEADER FILES?
+
+ANS:-Header files contain declarations of predefined functions.
+     We can use any number of header files in our programs as per the requirement of pre defined functions.
+     Somes header files are:
+     1. stdio.h
+     2. conio.h
+     3. math.h
+     4. stdlib.h
+     5. string.h
+     6. graphics.h
+
+----------------------------------------------------------------------------------------------------------------
+Q-6> WHAT IS THE MEANING OF #INCLUDE?
+
+ANS:- It is a pre-processor directive.
+      it is used to include any header file in our program.
+
+---------------------------------------------------------------------------------------------------------------
+Q-7> WHY WE USE VOID KEYWORD BEFORE MAIN()?
+
+ANS:- void is a data type.
+      void is used to denote return type of main() function.If we are using void then it gives instruction
+      to compiler that main() function will not return any value.
+
+---------------------------------------------------------------------------------------------------------------
+Q-8> WHAT IS THE DIFFERENCE BETWEEN <STDIO.H> AND <CONIO.H> HEADER FILES?
+
+ANS:- STDIO.H:- standard input and output header file.
+      CONIO.H:-Console input and output header file.   
+      stdio.h contains declarations of printf() and scanf() where as conio.h contains declarations of clrscr()
+      and getch()
+ 
+--------------------------------------------------------------------------------------------------------------
+Q-9> WHAT IS PRINTF() AND SCANF()?
+ 
+ANS:- printf() is predefined function. it is declared in stdio.h
+      This function is used to print some text on console.
+                            &
+      Scanf() is predefined function. it is declared in stdio.h
+      This function is used to read some values from console.
+
+---------------------------------------------------------------------------------------------------------------
+Q-10> WHAT IS CONSOLE?
+
+ANS:-Console is known as output screen through which user interacts with the source code.
+
+---------------------------------------------------------------------------------------------------------------      
+Q-11> WHAT IS OBJECT CODE?
+
+ANS:-Compilation process translates source code into binary language.
+     This binary language code is known as object code.
+
+---------------------------------------------------------------------------------------------------------------
+Q-12> WHAT IS EXECUTABLE CODE?
+
+ANS:- After compiling the source code, it converts into binary code.
+      This binary code is known as object code.
+      The Executable code contain object code and definitions of predefined functions from library.
+
+---------------------------------------------------------------------------------------------------------------
+Q-13> WHAT IS HEADER FILES?
+
+ANS:- Header file contains declarations of predefined functions.
+      The extension of this file is .h
+      The syntax of including header file in our source code is #include follwed by header file name in 
+      angular bracket.
+      #include is said to be pre-processor directive.
+
+---------------------------------------------------------------------------------------------------------------
+Q-14> WHAT IS LIBRARY FUNCTION?
+
+ANS:- Library functions are known as pre-defined functions.
+      They work with the help of header files and system library.
+
+---------------------------------------------------------------------------------------------------------------
+Q-15> WHAT IS CONSTANTS AND ITS TYPES IN C PROGRAMMING?
+
+ANS:- Constants is a value which cannot be changed during execution of the program.
+      we create constant varibale in c by using CONST keyword.
+      Types of constants:-
+      1. Integer constant
+      2.Float/Real constant
+      3.Character constant
+      4.String constant
+
+---------------------------------------------------------------------------------------------------------------
+Q-16> WHAT IS CASE SENSITIVITY IN C?
+
+ANS:- Case sensitivity means upper case and lower case letters are treated differently in C.
+
+---------------------------------------------------------------------------------------------------------------
+Q-17> WHAT IS THE DIFFERENCE BETWEEN CONSTANS,VARIBALES AND KEYWORDS?
+
+ANS:- Constant is a fixed quantity which cannot be changed during execution.
+      Varible holds constant values,we can change its value during execution.
+      Keywords are known as reserved words,compiler already knows the meaning of keywords.
+      some keywords are:-
+      int float char  switch else default for do while continue break etc..
+
+---------------------------------------------------------------------------------------------------------------
+Q-18> WHAT ARE FORMAT SPECIFIERS? WHY WE USE IT? GIVE EXAMPLES.
+
+ANS:- Format specifiers are used to specify type of value which we are going to read through scanf() and to
+      print through printf().
+      Some format specifiers are:
+      int    %d 
+      float  %f
+      char   %c
+
+----------------------------------------------------------------------------------------------------------------
+Q-19> WHY WE USE CLRSCR() FUNCTION?
+
+ANS:-This is pre defined function. It is declared in conio.h
+     It is used to clear console window.
+
+---------------------------------------------------------------------------------------------------------------
+Q-20> WHAT IS A COMPILER? WHY WE USE IT?
+
+ANS:- Compiler is a system software. it translates source code into object code.
+
+---------------------------------------------------------------------------------------------------------------
+Q-21> DIFFERENCE BETWEEN C AND C++?
+
+ANS:-                     C                      |                              C++   
+                                                 |
+1. C is a procedural programming language.       | 1. c++ is a object oriented programing language.                                      |
+                                                 |
+2. C is a middle level language.                 | 2. c++ is a high level language.                            |
+                                                 |
+3. In c language:-                               |  3. In c++ language:-
+      scanf() is used for input and              |       cin>> is used for input and                   
+      printf() is used for output                |        cout<< is used for output.                       |
+                                                 | 
+4. In c we cannot use inheritence                |  4. In c++ we use inheritance.                              |
+                                                 |
+5. File extension in c is .c                     |  5. File extension in c++ is .cpp
+                                                 |
+6. C is a subset of c++.                         |  6. C++ is a superset of c.
+                                                 |
+---------------------------------------------------------------------------------------------------------------
+Q-22> WHAT DO YOU MEAN BY DANGLING POINTER VARIABLE IN C PROGRAMMING?
+
+ANS:- A pointer in c Programming is used to point the memory location of an existing variable. In case if 
+      that particular variable is deleted and the pointer is still pointing to the same memory location, then 
+      that particular pointer variable is called as a dangling pointer variable.
+
+---------------------------------------------------------------------------------------------------------------
+Q-23> WHAT ARE THE VALID PLACES WHERE THE PROGRAMMER CAN APPLY BREAK CONTROL STATEMENT?
+
+ANS:-Break Control statement is valid  inside a loop and switch control statement.
+
+---------------------------------------------------------------------------------------------------------------
+Q-24> CAN A C PROGRAM COMPILE OR EXECUTE IN THE ABSENCE OF MAIN()?
+
+ANS:- The program will be compiled but will not be executed.To execut any C program, main() is required.
+
+---------------------------------------------------------------------------------------------------------------
+Q-25> WHAT IS A C TOKEN?
+
+ANS:- keywords,constants,special symbol,strings,operator,identifier used in c programs are reffered to a C
+      TOKENS.
+---------------------------------------------------------------------------------------------------------------
+
+Q-26> WHAT DO YOU MEAN BY NESTED STRUCTURE?
+
+---------------------------------------------------------------------------------------------------------------
+Q-27> WHAT IS DIFFERENCE BETWEEN ACTUAL PARAMETER AND FORMAT PARAMETER?
+
+ANS:-The ACTUAL PARAMETER are the variables that are transferred to the function when it is requested.While
+     The FORMAL PARAMETER are the values determined by the function that accepts values when the function is
+     declared.In actual parameters,only the varible is mentioned,not the data types.In formal parameters the 
+     data type is requied.
+
+---------------------------------------------------------------------------------------------------------------
+Q-28> WHAT IS DATA TYPE?
+
+ANS:-A data type,in programming,is a classification that specifies which type of value a variable has and
+     what type of mathematical,relational or logical operations can be applied to it without causing an error.
+
+---------------------------------------------------------------------------------------------------------------
+Q-29> WHAT IS VARIBALE?
+
+ANS:- Variable is basically nothing but the name of a memory location that we use for storing data.
+      We can change the value of a variable,and we can also reuse it multiple times.
+
+---------------------------------------------------------------------------------------------------------------
+Q-30> WHAT IS LOOP?
+
+ANS:- Loop is used to execute the block of code several times according to the condition given in the loop.
+      It is frequently used to traverse the data structure like array and linked list. 
+
+     There are 3 types of loops:-
+
+     1. WHILE LOOP:-
+                   while loop is used when the number of iterations are not known.
+                   In while loop the condition is evaluated before processing the body of the loop.
+                   If the condition is true, then only the body of the loop is executed,otherwise 
+                   it will exit from the loop.
+    
+      2. DO WHILE LOOP:-
+                   In this loop,the statements in the loop need to be executed at least once. After that,
+                   it checks the condition.if the condition is true,then it will again execute the loop,
+                   otherwise it will exit from the loop. 
+    
+      3. FOR LOOP:-
+                   For loop is used to iterate the statements or a part of the program serveral times
+                   until the conditon is false.
+                   It is used when number of iterations are known. 
+                   In this three parameters are given that is:-
+                   . Initialization
+                   . Condition
+                   . Increment/Decrement  
+
+--------------------------------------------------------------------------------------------------------------
+Q-31>WHAT FUNCTIONS ARE USED FOR DYNAMIC MEMORY ALLOCATION IN C PROGRAMING?
+
+ANS:
+    1.MALLOC()
+    2.CALLOC()
+    3.REALLOC()
+    4.FREE()
+
+ MALLOC:-
+    The malloc() function is used to allocate the memory during the execution of the program.
+    It does not initialize the memory but carries the garbage value.
+    Syntax:-
+       ptr = (cast-type*) malloc(size) 
+
+ CALLOC():-
+
+    The calloc() is same as malloc() function, but the difference only is that it initializes the memory 
+    with zero value.
+    Syntax:-
+       ptr = (cast-type*)calloc(n, element-size)
+  
+ REALLOC():-
+
+  The realloc() function is used to reallocate the memory.
+   If sufficient space is not available in the memory so updating the memory size using realloc() function
+   Syntax:-
+      ptr = realloc(ptr, newsize); // .  
+
+ FREE():- 
+
+   Free() function releases the memory allocated by either calloc() or malloc() function.
+
+---------------------------------------------------------------------------------------------------------------
+Q-32> WHAT IS PREPROCESSOR?
+
+ANS:-The C preprocessor is a micro processor that is used by compiler to transform your code before compilation.
+     It is called micro preprocessor because it allows us to add macros.
+
+     All preprocessor directives starts with hash # symbol.
+     FOR EX:-
+           #include
+           #define
+
+---------------------------------------------------------------------------------------------------------------
+Q-33> WHAT IS ENUMERATOR IN C?
+
+ANS:- Enumeration (or enum) is a user defined data type in C. It is mainly used to assign names 
+      to integral constants.
+
+     SYNTAX:-
+         enum containers
+         {
+           jan=1,feb=2,mar=3
+         };     
+---------------------------------------------------------------------------------------------------------------
+Q-34> WHAT IS MACRO?
+
+ANS:-A macro is a segment of code which is replaced by the value of macro.
+      Macro is defined by #define directive.
+
+---------------------------------------------------------------------------------------------------------------
+Q-35> WHAT ARE THE LIMITATION OF SCANF() AND HOW CAN IT RESOLVED? 
+
+ANS:- The Limitations of scanf() are as follows:
+      It is not possible to enter a multiword string into a single variable using scanf().
+      To avoid this the gets( ) function is used.
+
+---------------------------------------------------------------------------------------------------------------
+Q-36> MENTION FILE OPERATION IN C LANGUAGE?
+
+ANS:- Basic File Handling Techniques in C, provide the basic functionalities that user can perform against 
+      files in the system.
+
+    Function	        Operation
+    fopen()	        To Open a File
+    fclose()	        To Close a File
+    fgets()	        To Read a File
+    fprint()          	To Write into a File
+
+---------------------------------------------------------------------------------------------------------------
+Q-37> WHAT ARE THE DIFFERENT STORAGE CLASS IN C?
+     
+ANS:- The different storage specifiers available in C Language are as follows:
+
+      auto
+      register
+      static
+      extern
+
+---------------------------------------------------------------------------------------------------------------
+Q-38> WHEN SHOULD WE USE THE REGISTER STORAGE SPECIFIER?
+
+Ans: We use Register Storage Specifier if a certain variable is used very frequently. 
+   This helps the compiler to locate the variable as the variable will be declared in one of the CPU registers.
+
+---------------------------------------------------------------------------------------------------------------
+Q-39> What do you mean by Memory Leak?
+
+Ans: Memory Leak can be defined as a situation where programmer allocates dynamic memory to the program
+     but fails to free or delete the used memory after the completion of the code.
+
+--------------------------------------------------------------------------------------------------------------- 
+Q-40> DIFFERENTIATE BETWEEN GETCH() AND GETCHE() ?
+
+Ans:- Both the functions are designed to read characters from the keyboard and the only difference is that
+
+ GETCH():- Reads characters from the keyboard but it does not use any buffers. Hence, data is not displayed
+           on the screen.
+
+ GETCHE():- Reads characters from the keyboard and it uses a buffer. Hence, data is displayed on the screen.
+
+---------------------------------------------------------------------------------------------------------------
+Q-41> WHAT IS THE USAGE OF POINTER IN C?
+
+ANS:- ACCESSING ARRAY ELEMENT:- Pointers are used in traversing through an array of integers and strings. 
+      The string is an array of characters which is terminated by a null character '\0'.
+
+      DYNAMIC MEMORY ALLOCATION:- Pointers are used in allocation and deallocation of memory during the 
+      execution of a program.
+
+      CALL BY REFERENCE:- The pointers are used to pass a reference of a variable to other function.
+      Data Structures like a tree, graph, linked list, etc.: The pointers are used to construct different
+      data structures like tree, graph, linked list, etc.
+
+---------------------------------------------------------------------------------------------------------------
+Q-42> WHAT ARE THE TYPES OF POINTER?
+
+ANS:- There are majorly four types of pointers, they are:
+        Null Pointer.
+        Void Pointer.
+        Wild Pointer.
+        Dangling Pointer.
+
+---------------------------------------------------------------------------------------------------------------
+Q-43> WHAT IS NULL POINTER?
+
+ANS:-A pointer that doesn't refer to any address of value but NULL is known as a NULL pointer.
+     When we assign '0' value to a pointer of any type, then it becomes a Null pointer.
+
+---------------------------------------------------------------------------------------------------------------
+Q-44> WHAT IS VOID POINTER?
+
+ANS:-The void pointer in C is a pointer that is not associated with any data types. A void pointer can hold 
+     address of any type and can be typecasted to any type.
+
+---------------------------------------------------------------------------------------------------------------
+Q-45> WHAT IS WILD POINTER?
+
+ANS:-A pointer behaves like a wild pointer when it is declared but not initialized. That is why, 
+     they point any random memory location, it stores the memory addresses but point the unallocated memory. 
+
+---------------------------------------------------------------------------------------------------------------
+Q-46> WHAT IS DIFFERENCE BETWEEN MALLOC()  AND CALLOC() ?
+
+ANS:-CALLOC:-
+         The malloc() function allocates a single block of requested memory.
+     MALLOC:-
+         The calloc() function allocates multiple blocks of requested memory.
+     CALLOC:-
+         It initializes the content of the memory to zero.
+     MALLOC:-
+         It does not initialize the content of memory, so it carries the garbage value.
+     CALLOC:-
+        It consists of two arguments.
+     MALLOC:-
+        It consists of only one argument.
+      
+         * THE RETURN VALUE FOR BOTH IS SAME BOTH RETURN A POINTER POINTING TO THE ALLOCATED MEMORY.
+
+---------------------------------------------------------------------------------------------------------------
+Q-47> WHAT IS STRUCTURE?
+
+ANS:-
+   The structure is a user-defined data type that allows us to store multiple types of data in a single unit. 
+   It occupies the memory which is equal to the sum of the memory of all members.
+
+   There are two ways to access structure varibale.
+   1. By dot operator or member operator(.)
+   2. By structure pointer variable(->) 
+
+---------------------------------------------------------------------------------------------------------------
+Q-48> WHAT IS UNION?
+
+ANS:-Union is an user defined datatype in C programming language. It is a collection of variables of different 
+     datatypes in the same memory location.
+
+     it doesn't occupy the memory of all members.
+     It holds the memory of the largest member only.
+
+     In union, we can access only one variable at a time as it allocates one common space for all
+      the members of a union. At one time only one member can store value.
+
+---------------------------------------------------------------------------------------------------------------
+Q-49> WHAT IS AUTO KEYWORD IN C?
+
+ANS:-In C, every local variable of a function is known as an automatic (auto) variable. 
+     Variables which are declared inside the function block are known as a local variable.
+     The local variables are also known as an auto variable. It is optional to use an auto keyword 
+     before the data type of a variable. If no value is stored in the local variable, 
+     then it consists of a garbage value.
+
+---------------------------------------------------------------------------------------------------------------
+Q-50> WHAT IS COMMAND LINE ARGUMENTS?
+
+ANS:-The argument passed to the main() function while executing the program is known as command line argument.
+
+---------------------------------------------------------------------------------------------------------------
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
